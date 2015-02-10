@@ -7,9 +7,15 @@
 //
 
 #include <stdio.h>
-
+#include "ylog.h"
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    ylog_context ylog;
+    ylog_open(&ylog, "a.txt");
+    ylog_enable_console(&ylog);
+    ylog_set_level(&ylog, ylog_level_debug);
+    ylog_log0(&ylog,ylog_level_debug, "a test log");
+    ylog_log1(&ylog, ylog_level_debug, "hello %s","xiaoya");
+    ylog_log3(&ylog, "log", ylog_level_debug, "%s","i love you");
+    ylog_close(&ylog);
     return 0;
 }

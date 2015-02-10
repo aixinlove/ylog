@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		043B9FA71A5B661C0046D920 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 043B9FA61A5B661C0046D920 /* main.c */; };
+		043B9FAF1A5B66260046D920 /* ylog.c in Sources */ = {isa = PBXBuildFile; fileRef = 043B9FAD1A5B66260046D920 /* ylog.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		043B9FA31A5B661C0046D920 /* ylog */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ylog; sourceTree = BUILT_PRODUCTS_DIR; };
 		043B9FA61A5B661C0046D920 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		043B9FAD1A5B66260046D920 /* ylog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ylog.c; sourceTree = "<group>"; };
+		043B9FAE1A5B66260046D920 /* ylog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ylog.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				043B9FA61A5B661C0046D920 /* main.c */,
+				043B9FAD1A5B66260046D920 /* ylog.c */,
+				043B9FAE1A5B66260046D920 /* ylog.h */,
 			);
 			path = ylog;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043B9FAF1A5B66260046D920 /* ylog.c in Sources */,
 				043B9FA71A5B661C0046D920 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
