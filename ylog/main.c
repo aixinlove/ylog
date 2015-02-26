@@ -14,8 +14,8 @@ int main(int argc, const char * argv[]) {
     ylog_enable_console(&ylog);
     ylog_set_level(&ylog, ylog_level_debug);
     ylog_log0(&ylog,ylog_level_debug, "a test log");
-    ylog_log1(&ylog, ylog_level_debug, "hello %s","xiaoya");
-    ylog_log3(&ylog, "log", ylog_level_debug, "%s","i love you");
+    ylog_log1(&ylog, ylog_level_debug, "hello %s","world");
+    ylog_log3(&ylog, "log", ylog_level_debug, "%s","this is ylog3");
     ylog_close(&ylog);
     return 0;
 }

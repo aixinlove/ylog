@@ -1,0 +1,3 @@
+PROJECT(ylog)
+ADD_SUBDIRECTORY(ylog bin)
+
